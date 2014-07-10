@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#222222;
+}
+a{
+	color:GoldenRod;
+	background-color:#444444;
+	-webkit-box-shadow: 0px 0 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0px 0 10px rgba(0,0,0,0.5);
+	border-radius:2px;
+	margin-bottom: auto;
+}
+.item{
+	width: 20%;
+	float: left;
+}
+video{
+	width: 100%;
+}
