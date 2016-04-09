@@ -22,15 +22,15 @@ if ($videos = getVideos()) {
 		// insert the video and also some JS to make the video preload, have controls over mouseover, play fast and slow down if the video's clicked
 ?>
 <div class="item">
-<image src="<?php echo $image?>" width=100% title="<?php echo $time?>" alt="<?php echo $video?>">
+<image src="Camera/<?php echo $date.'/'.$image?>" width=100% title="<?php echo $time?>" alt="<?php echo $video?>">
 </div>
 <?php
-	}
+        }
 }
 
 // no files were found, either there was a problem with the path or there really aren't any videos
 else {
-	echo "Nothing to see here, move along";
+	echo "Nothing to see here, move along<br>";
 }
 ?>
 </div>
