@@ -24,7 +24,7 @@ $( "img" ).mouseover(function(event) {
 	// set time variable to the title text of the clicked item
 	var time = event.target.title;
 	// replace the HTML with the video using those variables
-	$( this ).replaceWith('<video loop preload="metadata" onclick="this.playbackRate=.75" onmouseover="this.play();this.playbackRate=5;this.controls=true;" onmouseout="this.pause();this.controls=false;this.playbackRate=5" title="' + time + '"><source src="Camera/' + date + '/' + video + '" type="video/webm">');
+	$( this ).replaceWith('<video loop preload="metadata" onclick="this.playbackRate=.75" onmouseover="this.play();this.playbackRate=5;this.controls=true;" onmouseout="this.pause();this.controls=false;this.playbackRate=5" title="' + time + '"><source src="camera/' + date + '/' + video + '" type="video/mp4">');
 });
 
 });

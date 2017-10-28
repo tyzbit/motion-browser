@@ -1,12 +1,11 @@
 <?php
-
-if ( isset($_GET['date']) && preg_match('/\d+/', $_GET['date'])) {
-        $date=$_GET['date'];
+date_default_timezone_set("America/New_York");
+if ( isset($_GET['date']) && preg_match('/[\d\-]+/', $_GET['date'])) {
+	$date=$_GET['date'];
 }
 else {
-        $date=date("Ymd");
+	$date=date("Y-m-d");
 }
-
-// this is the path to the directory that contains all of the video files
 define("prefix", "/media/Camera/$date/");
+
 ?>

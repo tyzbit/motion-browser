@@ -1,3 +1,9 @@
-<a href="/zips?C=M;O=A">Daily Zips</a><br>
-<a href="http://wtkr.qtosw.com:1707">Webcam</a><br>
-<a href="/live">Motion Webcam(VPN Only)</a><br>
+<?php
+
+$prev=date('Y-m-d', strtotime('-1 day', strtotime($date)));
+$next=date('Y-m-d', strtotime('+1 day', strtotime($date)));
+?>
+<a href="/live">Live View</a><br>
+<a href="?date=<?php echo $prev; ?>">Previous Day</a><br>
+<a href="?date=<?php echo $next; ?>">Next Day</a><br>
+<a href="/">Today</a><br>
